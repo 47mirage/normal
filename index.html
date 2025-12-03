@@ -804,7 +804,7 @@
         ticketInfo.eventDate = new Date(ticketInfo._date.year, ticketInfo._date.month - 1, ticketInfo._date.day);
         // 6.22
         ticketInfo.date = `${ticketInfo.eventDate.getMonth() + 1}.${ticketInfo.eventDate.getDate()}`;
-        ticketInfo.day = new Intl.DateTimeFormat('en-US', { weekday: 'short' }).format(ticketInfo.eventDate);
+        ticketInfo.day = new Intl.DateTimeFormat('ja-JP', { weekday: 'narrow' }).format(ticketInfo.eventDate);
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
